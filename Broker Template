@@ -1,0 +1,181 @@
+* Broker data
+
+** allowedProducts
+*** casualty
+**** effective: 2018-01-01
+***** commissions
+****** effective: 2018-01-01
+| placingMethod | businessSource | riskClass    | transactionType | brokerCommission | overriderCommission |
+|               |                |              | newBusiness     |                  |                     |
+|               |                |              | endorsement     |                  |                     |
+|               |                |              | renewal         |                  |                     |
+|               |                |              |                 |                  |                     |
+|               |                |              |                 |                  |                     |
+
+*** combined
+**** effective: 2018-01-01
+***** commissions
+****** effective: 2018-01-01
+| placingMethod | businessSource | riskClass    | transactionType | brokerCommission | overriderCommission |
+|               |                |              | newBusiness     |                  |                     |
+|               |                |              | endorsement     |                  |                     |
+|               |                |              | renewal         |                  |                     |
+|               |                |              |                 |                  |                     |
+|               |                |              |                 |                  |                     |
+
+*** cyber
+**** effective: 2018-01-01
+***** commissions
+****** effective: 2018-01-01
+| placingMethod | businessSource | riskClass    | transactionType | brokerCommission | overriderCommission |
+|               |                |              | newBusiness     |                  |                     |
+|               |                |              | endorsement     |                  |                     |
+|               |                |              | renewal         |                  |                     |
+|               |                |              |                 |                  |                     |
+|               |                |              |                 |                  |                     |
+
+*** managementLiability
+**** effective: 2018-01-01
+***** commissions
+****** effective
+| placingMethod | businessSource | riskClass    | transactionType | brokerCommission | overriderCommission |
+|               |                |              | newBusiness     |                  |                     |
+|               |                |              | endorsement     |                  |                     |
+|               |                |              | renewal         |                  |                     |
+|               |                |              |                 |                  |                     |
+|               |                |              |                 |                  |                     |
+
+*** property
+**** effective: 2018-01-01
+***** commissions
+****** effective: 2018-01-01
+| placingMethod | businessSource | riskClass    | transactionType | brokerCommission | overriderCommission |
+|               |                |              | newBusiness     |                  |                     |
+|               |                |              | endorsement     |                  |                     |
+|               |                |              | renewal         |                  |                     |
+|               |                |              |                 |                  |                     |
+|               |                |              |                 |                  |                     |
+
+*** professionalIndemnity
+**** effective: 2018-01-01
+***** commissions
+****** effective: 2018-01-01
+| placingMethod | businessSource | riskClass    | transactionType | brokerCommission | overriderCommission |
+|               |                |              | newBusiness     |                  |                     |
+|               |                |              | endorsement     |                  |                     |
+|               |                |              | renewal         |                  |                     |
+|               |                |              |                 |                  |                     |
+|               |                |              |                 |                  |                     |
+
+
+
+
+
+** brokerData
+| FieldGroup           | FieldName               | Value                      |
+|----------------------+-------------------------+----------------------------|
+| relations            | group                   |                            |
+|                      | association             |                            |
+|                      | grandMaster             |                            |
+|                      | acquiredBy              |                            |
+| communicationMethods | accountsEmailAddress    |                            |
+|                      | renewalEmailAddress     |                            |
+| identifiers          | atlasPinNumber          |                            |
+|                      | regulatoryLicenseNumber |                            |
+| categorization       | grandMasterBrokerage    | true                       |
+|                      | branch                  |                            |
+|                      | team                    |                            |
+|                      | toba                    |                            |
+|                      | category                |                            |
+|                      | profiles                |                            |
+| compliance           | lastComplianceCheck     | 2018-01-01                 |
+|                      | FCACompliance           | true                       |
+|                      | experianCompliance      | true                       |
+
+
+*** agencyResponsibles
+
+| user   | role                 |
+|--------+----------------------|
+| uw1    | underwriter          |
+| assuw1 | assistantUnderwriter |
+|        |                      |
+|        |                      |
+
+*** employees
+
+| firstName | lastName | allowedProducts | effectiveFrom | effectiveTo |
+|-----------+----------+-----------------+---------------+-------------|
+| John      | Smith    | casualty        |    2018-01-01 |             |
+|           |          | cyber           |    2018-01-01 |             |
+|           |          |                 |               |             |
+
+
+*** businessHistory
+| event            |       date | comment            |
+|------------------+------------+--------------------|
+| complianceChecks | 2018-01-01 |                    |
+| visits           | 2018-01-01 |                    |
+|                  |            |                    |
+
+
+
+
+
+** contactData
+| FieldGroup     | FieldName                    | Value                 |
+|----------------+------------------------------+-----------------------|
+|                | code                         |                       |
+|                | entityType                   |                       |
+| person         | firstName                    |                       |
+|                | lastName                     |                       |
+| company        | legalName                    |                       |
+|                | businessName                 |                       |
+|                | tradingName                  |                       |
+|----------------+------------------------------+-----------------------|
+|                | preferredCommunicationMethod |                       |
+|                | crn                          |                       |
+|                | ern                          |                       |
+|----------------+------------------------------+-----------------------|
+| residental     | isPrimary                    | true                  |
+|                | address                      |                       |
+|                | address2                     |                       |
+|                | city                         |                       |
+|                | postcode                     |                       |
+|                | country                      |                       |
+|----------------+------------------------------+-----------------------|
+| correspondance | isPrimary                    | false                 |
+|                | address                      |                       |
+|                | address2                     |                       |
+|                | city                         |                       |
+|                | postcode                     |                       |
+|                | country                      |                       |
+|----------------+------------------------------+-----------------------|
+| primaryContact | phoneNumber                  |                       |
+|                | mobilePhoneNumber            |                       |
+|                | faxNumber                    |                       |
+|                | emailAddress                 |                       |
+|                | website                      |                       |
+|----------------+------------------------------+-----------------------|
+| phoneNumbers   |                              | Phone number 1        |
+|                |                              | Phone number 2        |
+|                |                              | Phone number 3        |
+|                |                              | Phone number 4        |
+|                |                              | Phone number 5        |
+|                |                              | Phone number 6        |
+|                |                              | Phone number 7        |
+|                |                              | Phone number 8        |
+|                |                              | Phone number 9        |
+|                |                              | Phone number 10       |
+
+
+
+** bankAccounts
+|----------------+------------------------------+-----------------------|
+| bankAccount    | country                      | UK                    |
+|                | bankName                     |                       |
+|                | accountNumber                |                       |
+|                | accountName                  |                       |
+|                | sortCode                     |                       |
+|                | bsbNumber                    |                       |
+|                | currency                     | GBP                   |
