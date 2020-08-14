@@ -2,3 +2,4 @@
 venv
 random_python
 .idea
+.DS_Store
